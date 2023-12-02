@@ -13,7 +13,7 @@ class Chat:
     def __init__(
         self,
         token: str,
-        model: str = "gpt-3.5-turbo",
+        model: str = "gpt-4-1106-preview",
         chatbot_description: str = DEFAULT_CHATBOT_DESCRIPTION,
     ):
         """
@@ -48,7 +48,7 @@ class Chat:
             message = response.choices[0].message
             self.messages.append(message)
             return message.content
-        except openai.error.InvalidRequestError:
+        except Exception:
             self.messages.pop(0)
             return self.send(prompt)
 
