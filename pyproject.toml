@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "simplechatgpt"
-version = "1.0.2"
+version = "1.1.0"
 description = "An extremely simple interface to ChatGPT"
 authors = ["Thomas McKanna <thomasmckanna@proton.me>"]
 readme = "README.md"
