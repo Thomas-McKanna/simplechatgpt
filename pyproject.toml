@@ -1,14 +1,16 @@
 [tool.poetry]
 name = "simplechatgpt"
-version = "1.0"
+version = "1.0.2"
 description = "An extremely simple interface to ChatGPT"
 authors = ["Thomas McKanna <thomasmckanna@proton.me>"]
 readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/Thomas-McKanna/simplechatgpt"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 dependency = "^0.0.3"
-openai = "^0.27.8"
+openai = "*"
 
 
 [build-system]
